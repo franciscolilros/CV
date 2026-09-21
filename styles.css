@@ -1,0 +1,334 @@
+:root {
+    --bg: #07090b;
+    --panel: #080c10;
+    --bar: #151d24;
+    --text: #dce9e4;
+    --muted: #7f919c;
+    --green: #44e879;
+    --cyan: #27cfe6;
+    --line: #1b3540
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    background: var(--bg)
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+    letter-spacing: 0
+}
+
+main {
+    padding: 24px 3vw 48px
+}
+
+.window {
+    max-width: 1120px;
+    margin: auto;
+    border: 1px solid #36505c;
+    background: var(--panel);
+    box-shadow: 0 30px 80px #000
+}
+
+.titlebar {
+    height: 44px;
+    padding: 0 16px;
+    background: var(--bar);
+    border-bottom: 1px solid #36505c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px
+}
+
+.terminal {
+    padding: 42px 48px;
+    background-image: linear-gradient(#1e313222 1px, transparent 1px);
+    background-size: 100% 4px
+}
+
+.hero {
+    padding-bottom: 38px;
+    border-bottom: 1px solid var(--line)
+}
+
+.dim,
+.row p {
+    color: var(--muted)
+}
+
+.prompt {
+    margin: 28px 0 22px;
+    color: var(--muted)
+}
+
+.prompt b,
+.lead,
+em,
+.program b,
+.langs b,
+button {
+    color: var(--green)
+}
+
+small {
+    color: var(--cyan);
+    font-weight: bold
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 16px 0
+}
+
+.lead {
+    font-size: 18px
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 14px
+}
+
+.contact a {
+    color: inherit;
+    text-decoration: none
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1.55fr .8fr
+}
+
+.maincol {
+    padding: 8px 36px 0 0;
+    border-right: 1px solid var(--line)
+}
+
+aside {
+    padding: 8px 0 0 36px
+}
+
+section {
+    margin-bottom: 46px
+}
+
+.heading h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px
+}
+
+.heading h2:after {
+    content: "";
+    height: 1px;
+    background: var(--line);
+    flex: 1
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    margin: 20px 0
+}
+
+.row em,
+.job em {
+    font-style: normal
+}
+
+.row p {
+    font-size: 13px;
+    margin: 7px 0
+}
+
+.profile {
+    border-left: 2px solid var(--green);
+    padding-left: 18px;
+    line-height: 1.8
+}
+
+.job {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px
+}
+
+.maincol ul {
+    color: var(--muted);
+    line-height: 1.7;
+    list-style: none
+}
+
+.maincol ul li:before {
+    content: "> ";
+    color: var(--green)
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+    padding: 0
+}
+
+ol li {
+    counter-increment: item;
+    margin: 14px 0;
+    line-height: 1.5
+}
+
+ol li:before {
+    content: "[" counter(item, decimal-leading-zero) "] ";
+    color: var(--green);
+    margin-right: 12px
+}
+
+.program {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px
+}
+
+.program p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 9px 0 18px
+}
+
+.tags span {
+    border: 1px solid var(--line);
+    background: #111a21;
+    padding: 6px 8px;
+    font-size: 11px
+}
+
+.langs {
+    display: grid;
+    gap: 16px
+}
+
+.langs span {
+    display: flex;
+    justify-content: space-between
+}
+
+.checks {
+    list-style: none;
+    padding: 0;
+    color: var(--muted);
+    line-height: 2
+}
+
+.checks li:before {
+    content: "✓ ";
+    color: var(--cyan)
+}
+
+.copybox {
+    border: 1px solid var(--line);
+    padding: 18px
+}
+
+.copybox small {
+    color: var(--muted)
+}
+
+button {
+    border: 0;
+    background: none;
+    width: 100%;
+    padding: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font: inherit;
+    cursor: pointer
+}
+
+footer {
+    border-top: 1px solid var(--line);
+    padding-top: 4px;
+    font-size: 12px
+}
+
+footer i {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background: var(--green);
+    vertical-align: middle;
+    animation: blink 1s steps(1) infinite
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0
+    }
+}
+
+@media(max-width:760px) {
+    main {
+        padding: 20px 12px
+    }
+
+    .terminal {
+        padding: 28px 20px
+    }
+
+    h1 {
+        font-size: 30px
+    }
+
+    .columns {
+        display: block
+    }
+
+    .maincol {
+        padding-right: 0;
+        border-right: 0
+    }
+
+    aside {
+        padding-left: 0;
+        border-top: 1px solid var(--line)
+    }
+
+    .row,
+    .program {
+        grid-template-columns: 1fr
+    }
+
+    .program {
+        gap: 7px
+    }
+
+    .program p {
+        margin-bottom: 15px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    footer i {
+        animation: none
+    }
+}
