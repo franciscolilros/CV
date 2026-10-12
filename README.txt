@@ -1,12 +1,12 @@
 CURRÍCULUM CMD — FRANCISCO LILLO ROSALES
 
-Abre el siguiente enlace para acceder al curriculum:
+Open the following link to access the CV:
 https://franciscolilros.github.io/CV/ 
 
-También puedes descargar el proyecto y abrir index.html.
+You can also download the project and open the file index.html.
 
-Archivos incluidos:
-- index.html: contenido y estructura
-- styles.css: diseño adaptable de consola CMD
-- script.js: función para copiar el correo
-- CV.pdf: curriculum transferido a pdf para comodidad
+Included files:
+- index.html: content and structure
+- styles.css: adaptable design
+- script.js: function to copy the mail
+- CV_spa.pdf: CV in spanish moved onto pdf for multiple uses
