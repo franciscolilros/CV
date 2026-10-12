@@ -1,4 +1,4 @@
-CURRÍCULUM CMD — FRANCISCO LILLO ROSALES
+CURRICULUM CMD — FRANCISCO LILLO ROSALES
 
 Open the following link to access the CV:
 https://franciscolilros.github.io/CV/ 
