@@ -9,4 +9,5 @@ Included files:
 - index.html: content and structure
 - styles.css: adaptable design
 - script.js: function to copy the mail
-- CV_spa.pdf: CV in spanish moved onto pdf for multiple uses
+- CV_spa.pdf: pdf in spanish
+- CV_eng.pdf: pdf in english
